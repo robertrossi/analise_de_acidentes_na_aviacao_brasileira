@@ -48,5 +48,17 @@ O foco é demonstrar:
 
 ## 📁 Organização do Projeto
 
+## 💻 Tecnologias Utilizadas
 
+- Python
+- Google Colab
+- GitHub
+
+---
+
+## 👨‍💻 Autor
+
+**Robert Rossi Silva de Mesquita**  
+*Cientista de Dados*  
+[🔗 LinkedIn]([https://www.linkedin.com/](https://www.linkedin.com/in/robert-rossi-silva-de-mesquita-02766215b/))
 
