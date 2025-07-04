@@ -38,9 +38,9 @@ Demonstrando:
 
 - Fonte: [CENIPA - Dados Abertos do Governo Federal](https://dados.gov.br/dataset/ocorrencias-aeronauticas-da-aviacao-civil-brasileira)
 - Tabelas utilizadas:
-  - `ocorrencia.csv`
-  - `aeronave.csv`
-  - `fator_contribuinte.csv`
+  - `ocorrencia.csv`             Tabela com dados gerais das ocorrências aeronáuticas
+  - `aeronave.csv`               Tabela com dados sobre as aeronaves envolvidas nas ocorrências aeronáuticas
+  - `fator_contribuinte.csv`     Tabela com dados de Fatores contribuintes para as ocorrências aeronáuticas
 
 ---
 
