@@ -41,6 +41,7 @@ Demonstrando:
   - `ocorrencia.csv`             Tabela com dados gerais das ocorrências aeronáuticas
   - `aeronave.csv`               Tabela com dados sobre as aeronaves envolvidas nas ocorrências aeronáuticas
   - `fator_contribuinte.csv`     Tabela com dados de Fatores contribuintes para as ocorrências aeronáuticas
+  - arquivos PDF: dicionario_de_dados disponível na pasta data/raw
 
 ---
 
@@ -67,7 +68,7 @@ Demonstrando:
 
 
 ### 3. Hipóteses Estatísticas (`03-hipoteses_estatisticas.ipynb`)
-- Hipótese testada: Existem perfis distintos de ocorrências aeronáuticas que se agrupam segundo características da aeronave (como número de motores, peso e assentos), e esses perfis estão associados a diferentes fatores contribuintes (humano, material, operacional, etc.) e fases de operação.
+- Hipótese testada: Existem perfis distintos de ocorrências aeronáuticas que se agrupam segundo características da aeronave (como número de motores, peso e assentos), diferentes fatores contribuintes (humano, material, operacional, etc.) e fases de operação.
 - Clusterização com KMeans baseada em características técnicas das aeronaves, 
 - Avaliação com métricas:
 - Formulação de hipóteses com base nos clusters
