@@ -1,7 +1,7 @@
 
 # ✈️ Análise de Ocorrências Aeronáuticas na Aviação Brasileira
 
-Este projeto tem como objetivo explorar e analisar as ocorrências aeronáuticas no Brasil, utilizando dados públicos do CENIPA. A ideia é aplicar técnicas de Ciência de Dados para gerar insights relevantes sobre os acidentes registrados, com foco em **qualidade dos dados, limpeza, integração, análise exploratória, clusterização e hipóteses estatísticas.**
+Este projeto tem como objetivo explorar e analisar as ocorrências aeronáuticas da Aviação Civil, utilizando dados públicos do CENIPA. A ideia é aplicar técnicas de Ciência de Dados para gerar insights relevantes sobre os acidentes registrados, com foco em **qualidade dos dados, limpeza, integração, análise exploratória, clusterização e hipóteses estatísticas.**
 
 ---
 
@@ -55,27 +55,32 @@ Demonstrando:
 - 🧠 Criação de variáveis numéricas e codificação (`One-Hot` para `fator_area`)
 
 ### 2. Análise Exploratória (`02-Analise_exploratoria.ipynb`)
-- Distribuição temporal das ocorrências
-- Análise dos tipos de danos, fases do voo e localizações
-- Clusterização com KMeans baseada em características técnicas das aeronaves
-- Avaliação com métricas:
-  - Silhouette Score: `0.352`
-  - Calinski-Harabasz: `405.5`
-  - Davies-Bouldin: `1.13`
+- Pré-processamento específico para EDA
+- Análise Temporal das Ocorrências
+- Ocorrências por Ano
+- Ocorrências por Mês
+- Ocorrências por Hora e Tipo de Operação
+- Análise dos Fatores Contribuintes
+- Frequência dos Fatores Causadores
+- Fatalidades por Localidade ao Longo dos Anos
+- Armazenamento do arquivo final para etapa de hipóteses e estatística
+
 
 ### 3. Hipóteses Estatísticas (`03-hipoteses_estatisticas.ipynb`)
+- Hipótese testada: Existem perfis distintos de ocorrências aeronáuticas que se agrupam segundo características da aeronave (como número de motores, peso e assentos), e esses perfis estão associados a diferentes fatores contribuintes (humano, material, operacional, etc.) e fases de operação.
+- Clusterização com KMeans baseada em características técnicas das aeronaves, 
+- Avaliação com métricas:
 - Formulação de hipóteses com base nos clusters
-- Testes estatísticos (Qui-quadrado, ANOVA)
+- Testes estatísticos 
 - Interpretação de p-valores e conclusões
 
 ---
 
 ## 💡 Principais Insights
 
-- **Erro humano** é mais comum em aviões grandes, apontando desafios operacionais mesmo com protocolos robustos.
-- **Aeronaves leves** concentram acidentes com maior gravidade (nível de dano), especialmente em fases de pouso.
-- Três **perfis distintos** foram revelados com base em peso, assentos e número de motores, com associação a diferentes fatores contribuintes.
-- A fase de voo crítica varia conforme o cluster, revelando onde esforços de prevenção devem ser direcionados.
+- Com base na clusterização realizada sobre as ocorrências aeronáuticas, foi possível identificar três perfis bem distintos de acidentes, fortemente associados a características técnicas das aeronaves (peso, número de assentos e motores) fatores contribuintes e fases do voo.
+
+- A análise revelou que diferentes perfis de aeronaves enfrentam riscos distintos ao longo do ciclo de voo. Estratégias genéricas de mitigação podem falhar se não forem adaptadas à realidade de cada grupo. As evidências obtidas por meio da clusterização podem servir como base para políticas de segurança mais inteligentes e personalizadas.
 
 ---
 
